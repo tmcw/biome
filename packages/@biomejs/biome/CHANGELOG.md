@@ -1,5 +1,18 @@
 # @biomejs/biome
 
+## 2.3.5
+
+### Patch Changes
+
+- [#8001](https://github.com/biomejs/biome/pull/8001) [`6e8a50e`](https://github.com/biomejs/biome/commit/6e8a50e720135012832e04728d6c0e38b8bb74a1) Thanks [@ematipico](https://github.com/ematipico)! - Added support Svelte syntax `{#key}`. Biome now is able to parse and format the Svelte syntax [`{#key}`](https://svelte.dev/docs/svelte/key):
+
+  ```diff
+  -{#key   expression} <div></div> {/key}
+  +{#key expression}
+  +  <div></div>
+  +{/key}
+  ```
+
 ## 2.3.4
 
 ### Patch Changes
